@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Nostra Storia - Brand History</title>
+    <link rel="stylesheet" href="beer.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="fullscreen-menu" id="fullscreen-menu">
+                <ul class="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beer.html">Prodotti</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="slider">
+            <div class="slider-content">
+                <div class="slide" id="slide-1" data-beer="YUKIO">
+                    <div class="slide-image">
+                        <img src="photos/yukio_2.png" alt="">
+                    </div>
+                    <div class="slide-text">
+                        <h2>Pilo</h2>
+                        <h1>YUKIO</h1>
+                        <p>ABV 6,5% | IBU 60 | OG 1.104.</p>
+                        <p>La nostra birra più leggera e versatile, una PILS (lager) che esprime tutta la purezza della tradizione birraria giapponese. Fresca e dissetante, è l’abbinamento perfetto per una cena a base di riso, zuppe ma anche involtini primavera, uramaki e tanti altri.</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="slide" id="slide-2" data-beer="Itoku">
+                    <div class="slide-image">
+                        <img src="photos/itoku_2.png" alt="">
+                    </div>
+                    <div class="slide-text">
+                        <h2>Ipa</h2>
+                        <h1>Itoku</h1>
+                        <p>ABV 6,5% | IBU 60 | OG 1.104.</p>
+                        <p>Birra IPA che, grazie al suo perfetto equilibrio tra l'amarezza del luppolo e la dolcezza del malto caramellato, si abbina perfettamente a piatti piccanti o a qualsiasi piatto fritto (come la tempura) che desideri offrire ai tuoi clienti.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="slide" id="slide-3" data-beer="Sujin">
+                    <div class="slide-image">
+                        <img src="photos/sujin_2.png" alt="">
+                    </div>
+                    <div class="slide-text">
+                        <h2>Blanche</h2>
+                        <h1>SUJIN</h1>
+                        <p>ABV 6,5% | IBU 60 | OG 1.104.</p>
+                        <p>birra BLANCHE molto pregiata, caratterizzata da una luppolatura con la varietà CASCADE e arricchita dall’aggiunta di scorza d’arancia amara. Perfetta per accompagnare il sashimi, si sposa magnificamente con tutti i piatti a base di pesce.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <button class="arrow left" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                </svg>
+            </button>
+            <button class="arrow right" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </button>
+            
+        </section>
+
+        <script src="hamburger.js"></script>
+    </div>
+    <script src="beer.js"></script>
+</body>
+</html>

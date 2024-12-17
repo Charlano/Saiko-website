@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Image with Scroll Stop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="fullscreen-menu" id="fullscreen-menu">
+                <ul class="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beer.html">Prodotti</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <div class="image-container">
+            <div class="logo">
+                <img src="photos/LOGO SAIKO PNG.png" alt="">
+            </div>
+            <div class="sticky-image"></div>
+            <div class="stop-point"></div>
+        </div>
+
+        <div class="slogan">
+            <h1 class="left">Se non <br>è SAIKO</h1>
+            <h1 class="right">è solo <br>BIRRA!</h1>
+        </div>
+
+        <div class="about-section">
+            <div class="about">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>About</h3>
+                        <h1>La nostra storia</h1>
+                        <p>SAIKO nasce per unire la tradizione giapponese e la purezza delle Alpi. Vogliamo offrire birra artigianale autentica, lontana dai processi industriali, con tecniche che preservano il gusto originale.</p>
+                        <button class="about-button"><a href="about.html">Scopri di più</a></button>
+                    </div>
+                    <video class="about-media" autoplay muted loop>
+                        <source src="photos/saiko reel 1080 versione 5 low quality 10mbps.mp4" type="video/mp4">
+                        Il tuo browser non supporta il tag video.
+                    </video>
+                </div>
+            </div>
+        
+            <div class="about">
+                <div class="about-content about-content-reverse">
+                    <div class="about-text">
+                        <h3>About</h3>
+                        <h1>La nostra filosofia</h1>
+                        <p>Con SAIKO, vogliamo che ogni birra esprima l’eccellenza. Usando acqua alpina e cereali di montagna, offriamo un prodotto che supera gli standard più alti, perché crediamo che il meglio sia sempre la scelta giusta.</p>
+                        <button class="about-button"><a href="about.html">Scopri di più</a></button>
+                    </div>
+                    <img src="photos/DSC03779-46.jpg" class="about-media">
+                </div>
+            </div>
+        </div>        
+
+        <div class="product-selector-container">
+            <h1>Le nostre birre</h1>
+            <h2>Prodotti artigianali con acque pure delle Alpi</h2>
+        
+            <div class="product-selector">
+                <div class="product-container">
+                    <a href="beer.html?beer=yukio">YUKIO</a>
+                    <img src="photos/yukio_2.png" alt="YUKIO">
+                    <p class="product-name">YUKIO</p>
+                </div>
+                <div class="product-container">
+                    <a href="beer.html?beer=sujin">SUJIN</a>
+                    <img src="photos/sujin_2.png" alt="SUJIN">
+                    <p class="product-name">SUJIN</p>
+                </div>
+                <div class="product-container">
+                    <a href="beer.html?beer=itoku">ITOKU</a>
+                    <img src="photos/itoku_2.png" alt="ITOKU">
+                    <p class="product-name">ITOKU</p>
+                </div>
+            </div>
+        </div>
+         
+        
+        <div class="grid-section">
+            <div class="grid-item double-row">
+                <img src="photos/DSC03709-9 ph.jpg" alt="Image 1">
+            </div>
+            <div class="grid-item">
+                <img src="photos/DSC03729-21 ph.jpg" alt="Image 2">
+            </div>
+            <div class="grid-item">
+                <img src="photos/DSC03751-33 ph.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item ">
+                <img src="photos/DSC03779-46.jpg" alt="Image 4">
+            </div>
+            <div class="grid-item double-row">
+                <img src="photos/DSC03793-50 ph.jpg" alt="Image 5">
+            </div>
+            <div class="grid-item">
+                <img src="photos/DSC03886-53.jpg" alt="Image 6">
+            </div>
+        </div>        
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="photos/logo instagram 3.jpg">
+                    <h2>SAIKO</h2>
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Contattaci</h3>
+                        <p>Via 0000000</p>
+                        <p>Email: info@000000000.com</p>
+                        <p>Phone: +39 000000000</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Altro</h3>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Socials</h3>
+                        <ul class="social-icons">
+                            <li><a href="#"><img src="photos/facebook-app-symbol.png" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="photos/instagram.png" alt="Instagram"></a></li>
+                            <li><a href="#"><img src="photos/whatsapp.png" alt="Whatsapp"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Saiko. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>
