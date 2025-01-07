@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Nostra Storia - Brand History</title>
+    <link rel="stylesheet" href="beer.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="top-nav">
+                <div class="logo">
+                    <img src="photos/LOGO SAIKO PNG.png" alt="">
+                </div>
+            </div>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="fullscreen-menu" id="fullscreen-menu">
+                    <ul class="menu-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="beer.html">Prodotti</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slider-container" id="slider">
+        <div class="slide" data-slide="1" style="transform: translateX(0%);">
+            <img src="photos/yukio_2.png" alt="Beer 1">
+            <div class="slide-content">
+                <h1>Yukio</h1>
+                <h2>Pilo</h2>
+            </div>
+        </div>
+        <div class="slide" data-slide="2" style="transform: translateX(100%);">
+            <img src="photos/itoku_2.png" alt="Beer 2">
+            <div class="slide-content">
+                <h1>Itoku</h1>
+                <h2>Ipa</h2>
+            </div>
+        </div>
+        <div class="slide" data-slide="3" style="transform: translateX(200%);">
+            <img src="photos/sujin_2.png" alt="Beer 3">
+            <div class="slide-content">
+                <h1>Sujin</h1>
+                <h2>Blanche</h2>
+            </div>
+        </div>
+
+        <div class="slider-dots" id="slider-dots">
+            <!-- Dots will be dynamically added here -->
+        </div>
+    </div>
+    
+    <div class="slider-navigation">
+        <button class="arrow" id="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="arrow" id="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="content-section" id="content">
+        <div class="content-wrapper">
+            <!-- Nutritional Info Table -->
+            <div class="nutrition-info">
+                <table>
+                    <tr>
+                        <th>Calorie</th>
+                        <td>150 kcal</td>
+                    </tr>
+                    <tr>
+                        <th>Alcohol</th>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th>Zucchero</th>
+                        <td>3g</td>
+                    </tr>
+                    <tr>
+                        <th>Carboidrati</th>
+                        <td>10g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Info Section -->
+            <div class="info-section">
+                <p class="pretitle">Fresca e versatile</p>
+                <h1 class="title">Informazioni sulla birra Yukio</h1>
+                <p class="description">La nostra birra più leggera e versatile, una PILS (lager) che esprime tutta la purezza della tradizione birraria giapponese. Fresca e dissetante, è l’abbinamento perfetto per una cena a base di riso, zuppe ma anche involtini primavera, uramaki e tanti altri.</p>
+                
+            </div>
+        </div>    
+
+        <div class="image-section">
+            <img src="photos/DSC03886-54.jpg" alt="Beer Image" class="beer-image">
+        </div>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="photos/LOGO SAIKO PNG.png">
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Contattaci</h3>
+                    <p>Via 0000000</p>
+                    <p>Email: info@000000000.com</p>
+                    <p>Phone: +39 000000000</p>
+                </div>
+                <div class="footer-column">
+                    <h3>links</h3>
+                    <a href="index.html">HomePage</a>
+                    <a href="about.html">About</a>
+                    <a href="beer.html">Prodotti</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Socials</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="photos/facebook-app-symbol.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="photos/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="photos/whatsapp.png" alt="Whatsapp"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Saiko. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="hamburger.js"></script>
+    <script src="beer.js"></script>
+</body>
+</html>

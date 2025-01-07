@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slider-container {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+    background-image: url(photos/bg_mv_01_pc-0000.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    height: 70%;
+    margin-left: 10%;
+}
+
+.slide-content {
+    margin-right: 10%;
+    text-align: right;
+}
+
+.slide-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.slide-content h2 {
+    font-size: 1.5rem;
+    color: #B28564;
+    margin: 0;
+}
+
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.arrow {
+    color: black;
+    border: none;
+    padding: 40px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.slider-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dots .dot.active {
+    background-color: #B28564; /* Highlight color for active slide */
+}
+
+
+.content-section {
+    background-color: #f9f9f9;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+    max-width: 1500px; /* Limita la larghezza massima */
+    margin: 0 auto; /* Centra il contenitore */
+    width: 100%; /* Permette al contenitore di occupare il 100% dello spazio disponibile */
+    padding: 0 20px; /* Spazio interno per schermi piccoli */
+    box-sizing: border-box; /* Include il padding nella larghezza totale */
+    padding: 50px;
+}
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .slide img {
+        height: 65%;
+    }
+
+    .info-section {
+        width: 100% !important;
+    }
+
+    .nutrition-info {
+        width: 100% !important;
+    }
+
+    .pretitle, .title{
+        text-align: center;
+    }
+
+    .description {
+        text-align: justify;
+        margin: 30px 0;
+    }
+
+    .slider-navigation {
+        top: 33%;
+    }
+
+    .arrow {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .slider-container {
+        height: 65vh;
+    }
+}
+
+.nutrition-info {
+    width: 40%;
+    padding: 20px;
+}
+
+.nutrition-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-info th, .nutrition-info td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-section {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.info-section .title {
+    font-size: 2.5rem;
+}
+
+.info-section .description {
+    font-size: 1.2rem;
+}
+
+.image-section {
+    text-align: center;
+}
+
+.beer-image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+}
