@@ -107,18 +107,21 @@ body {
     max-width: 1500px; /* Limita la larghezza massima */
     margin: 0 auto; /* Centra il contenitore */
     width: 100%; /* Permette al contenitore di occupare il 100% dello spazio disponibile */
-    padding: 0 20px; /* Spazio interno per schermi piccoli */
     box-sizing: border-box; /* Include il padding nella larghezza totale */
     padding: 50px;
 }
 
 @media (max-width: 600px) {
     .slide {
-        gap: 40px;
+        gap: 35px;
+    }
+
+    .content-wrapper {
+        padding: 40px;
     }
 
     .slider-container {
-        height: 87vh !important;
+        height: 80vh !important;
     }
 
     .content-wrapper {
@@ -127,7 +130,7 @@ body {
     }
 
     .slide img {
-        height: 55%;
+        height: 60%;
     }
 
     .slide-content h1 {

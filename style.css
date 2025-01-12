@@ -184,7 +184,7 @@
 
 @media (max-width: 600px) {
     .slider, .hero-video, .slide img {
-        height: 90vh !important;
+        height: 85vh !important;
     }
 
     .slider h2 {

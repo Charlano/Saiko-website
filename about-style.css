@@ -27,16 +27,17 @@
 .hero-content {
     position: relative; /* Keep text content above the dark filter */
     z-index: 2; /* Ensure text is on top of the overlay */
+    padding: 20px;
 }
 
 .hero h1 {
     color: white;
-    font-size: 60px;
+    font-size: 90px !important;
     margin: 0;
 }
 
 .hero p { 
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
 }
 
@@ -154,12 +155,21 @@
 }
 
 @media (max-width: 600px) {
+    .hero h1 {
+        font-size: 50px !important;
+    }
+    
+    .hero p { 
+        font-size: 16px !important;
+        margin-top: 10px !important;
+    }
+
     .history-text, .product-details {
-        padding: 40px;
+        padding: 35px;
     }
 
     .history-text img , .product-details img{
-        width: 110%;
+        width: 100%;
     }
 
     .banner {
@@ -173,6 +183,7 @@
 }
 
 @media (min-width: 768px) {
+
     .product-details-container {
         flex-direction: row;
         justify-content: space-between;
