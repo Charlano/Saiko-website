@@ -3,6 +3,8 @@ const content = document.getElementById('content');
 const dotsContainer = document.getElementById('slider-dots');
 
 const slideTexts = [
+
+    //changes
     {
         description: 'La nostra birra più leggera e versatile, una PILS (lager) che esprime tutta la purezza della tradizione birraria giapponese. Fresca e dissetante, è l’abbinamento perfetto per una cena a base di riso, zuppe ma anche involtini primavera, uramaki e tanti altri.',
         nutritionalInfo: [
