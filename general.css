@@ -122,11 +122,11 @@ header .logo img {
     }
 
     .header-container {
-        padding: 15px 25px;
+        padding: 25px !important;
     }
 
     header .logo img {
-        height: 50px !important;
+        height: 0px !important;
     }
 
 }

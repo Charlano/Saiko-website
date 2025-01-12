@@ -183,13 +183,17 @@
 }
 
 @media (max-width: 600px) {
+    .slider, .hero-video, .slide img {
+        height: 90vh !important;
+    }
+
     .slider h2 {
         font-size: 3rem !important;
-        font-weight: 6s00;
+        font-weight: 600;
     }
 
     .lines {
-        bottom: 25px;
+        bottom: 30px;
     }
     
     .line-container {
