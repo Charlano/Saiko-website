@@ -1,7 +1,6 @@
 /* Visible Hero Video */
 .hero-video {
     width: 100%;
-    max-width: 1750px;     /* Max width of the video */
     height: 100vh;         /* Full height of the viewport */
     object-fit: cover;
     object-position: center;
@@ -181,6 +180,10 @@
 
     .lines {
         bottom: 25px !important;
+    }
+
+    .line {
+        margin: 0 2px;
     }
 
     .slider button {
