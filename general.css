@@ -104,12 +104,41 @@ header .logo img {
 }
 
 @media (max-width: 600px) {
+    .hamburger {
+        width: 30px;
+        height: 20px;
+    }
+
+    .hamburger span {
+        height: 4px;
+    }
+
+    .hamburger.activated span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.activated span:nth-child(2) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .header-container {
-        padding: 20px 35px;
+        padding: 15px 25px;
     }
 
     header .logo img {
-        height: 60px;
+        height: 50px !important;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .header-container {
+        padding: 25px 35px;
+    }
+
+    header .logo img {
+        height: 75px;
     }
 
 }
@@ -192,7 +221,7 @@ header .logo img {
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .footer-column {

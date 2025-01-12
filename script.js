@@ -29,7 +29,7 @@ function showSlides(n) {
 showSlides(slideIndex);
 
 function updateMediaSources() {
-    const isSmallScreen = window.innerWidth < 1500;
+    const isSmallScreen = window.innerWidth < 800;
 
     // Video source change
     const video = document.querySelector('.hero-video source');
@@ -55,25 +55,3 @@ function updateMediaSources() {
 // Initial call and event listener for resizing
 updateMediaSources();
 window.addEventListener('resize', updateMediaSources);
-
-let startX = 0; // Track horizontal touch start position
-
-function handleTouchStart(event) {
-    startX = event.touches[0].clientX; // Record initial horizontal position
-}
-
-function handleTouchMove(event) {
-    const deltaX = startX - event.touches[0].clientX; // Calculate horizontal movement
-    if (deltaX > 30) { 
-        // Swipe left
-        currentSlide(slideIndex + 1);
-    } else if (deltaX < -30) { 
-        // Swipe right
-        currentSlide(slideIndex - 1);
-    }
-}
-
-// Add event listeners for touch and wheel
-const slider = document.querySelector('.slider');
-slider.addEventListener('touchstart', handleTouchStart);
-slider.addEventListener('touchmove', handleTouchMove);

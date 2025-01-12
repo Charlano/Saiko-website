@@ -155,11 +155,11 @@
 
 @media (max-width: 600px) {
     .history-text, .product-details {
-        padding: 50px;
+        padding: 40px;
     }
 
     .history-text img , .product-details img{
-        width: 100%;
+        width: 110%;
     }
 
     .banner {
