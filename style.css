@@ -282,12 +282,21 @@
         grid-column: span 2; /* Spans the item across 2 rows */
     }
 }
-
-@media (max-width: 1000px) {
-    .hero-video{
+/* For screens larger than 1200px in portrait */
+@media (min-width: 1000px) and (orientation: portrait) {
+    .hero-video {
         object-fit: cover;
     }
+}
 
+/* For screens smaller than 1200px in any orientation */
+@media (max-width: 1000px) {
+    .hero-video {
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1000px) {
 
     .about-section {
         margin: 150px 0;
@@ -321,7 +330,7 @@
 /* Banner Section */
 .banner {
     position: relative;
-    background-image: url(photos/DSC04024-88.jpg);
+    background-image: url(photos/contenuti\ sito\ web\ saiko/DSC04024-88\ lq.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect */

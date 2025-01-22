@@ -62,7 +62,7 @@ slider.addEventListener('touchend', () => (isDragging = false));
 
 // Media source updates for responsiveness
 function updateMediaSources() {
-    const isSmallScreen = window.innerWidth < 800;
+    const isSmallScreen = window.innerWidth < 600;
 
     const video = document.querySelector('.hero-video source');
     if (video) {
