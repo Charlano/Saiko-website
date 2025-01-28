@@ -191,7 +191,8 @@ header .logo img {
     color: white;
     padding: 40px 0;
     background-color: #282F41;
-    background-position: bottom;
+    background-image: url(photos/footer-bg.png);
+    background-size: cover;
 }
 
 .footer-container {

@@ -399,9 +399,23 @@
 
 .product-selector a {
     width: 100%;
-    background-color: #DDDDDD;
+    background-size: cover;
+    background-position: right;
     text-align: center;
     text-decoration: none;
+    background-color: rgba(241, 241, 241, 0.5);
+}
+
+#beer-1 {
+    background-image: url('photos/sushi_table4.png');
+}
+
+#beer-2 {
+    background-image:  url('photos/download.png');
+}
+
+#beer-3 {
+    background-image:  url('photos/sushi_table3.png');
 }
 
 .product-container { /* Adjust for proper spacing within the 80% width */
@@ -413,11 +427,17 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border: 1px solid #B28564;
 }
 
 .product-container:hover img {
     transform: scale(0.95);
 }
+
+.product-container:hover {
+    transform: scale(1.02);
+}
+
 
 .product-container img {
     width: auto;
@@ -429,7 +449,7 @@
 }
 
 .product-container p {
-    border: 1px solid #B28564; /* Add border around the text */
+    border-top: 1px solid #B28564;
     padding: 12px;
     text-align: center;
     margin: 0;
@@ -453,7 +473,7 @@
     background: white; /* Optional for better contrast */
     box-sizing: border-box; /* Include padding/border in width */
     position: relative;
-    border-top: none !important;
+    border-top: 1px solid #B28564;
 }
 
 .grid-section {

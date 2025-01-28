@@ -5,7 +5,7 @@ body {
 
 .slider-container {
     position: relative;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     overflow: hidden;
     background-image: url(photos/bg_mv_01_pc-0000.jpg);
@@ -111,13 +111,19 @@ body {
     padding: 50px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
     .beer-image{
         margin-bottom: 0 !important;
     }
 }
 
 @media (max-width: 600px) {
+    .beer-image{
+        min-height: 0 !important;
+        object-position: bottom;
+    }
+
+
     .slide {
         gap: 35px;
     }
@@ -211,6 +217,7 @@ body {
 .beer-image {
     width: 100%;
     max-height: 80vh;
+    min-height: 800px;
     max-width: 1500px;
     object-fit: cover;
     margin-bottom: 100px;
