@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-    background-image: url('photos/contenuti\ sito\ web\ saiko/DSC03793-50\ lq.jpg');
+    background-image: url('../photos/images/DSC03793-50\ lq.jpg');
     background-size: cover;
     background-position: bottom;
     height: 65vh;
@@ -79,7 +79,7 @@
 /* Banner Section */
 .banner {
     position: relative;
-    background-image: url(photos/contenuti\ sito\ web\ saiko/DSC03997-76\ lq.jpg);
+    background-image: url(../photos/images/DSC03997-76\ lq.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect */

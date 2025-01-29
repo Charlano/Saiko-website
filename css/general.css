@@ -191,7 +191,7 @@ header .logo img {
     color: white;
     padding: 40px 0;
     background-color: #282F41;
-    background-image: url(photos/footer-bg.png);
+    background-image: url(../photos/background/footer-bg.png);
     background-size: cover;
 }
 

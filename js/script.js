@@ -67,19 +67,19 @@ function updateMediaSources() {
     const video = document.querySelector('.hero-video source');
     if (video) {
         video.src = isSmallScreen 
-            ? 'photos/foto e video sito web/saiko reel verticale web.mp4' 
-            : 'photos/foto e video sito web/saiko orizzontale sito web.mp4';
+            ? 'photos/homepage/saiko reel verticale web.mp4' 
+            : 'photos/homepage/saiko orizzontale sito web.mp4';
         video.parentElement.load();
     }
 
     const images = document.querySelectorAll('.slide img');
     if (images.length) {
         images[0].src = isSmallScreen 
-            ? 'photos/foto e video sito web/verticale homepage 1.jpg' 
-            : 'photos/foto e video sito web/orizzont homepage.jpg';
+            ? 'photos/homepage/verticale homepage 1.jpg' 
+            : 'photos/homepage/orizzont homepage.jpg';
         images[1].src = isSmallScreen 
-            ? 'photos/foto e video sito web/verticale homepage 2.jpg' 
-            : 'photos/foto e video sito web/orizzont homepage 2.jpg';
+            ? 'photos/homepage/verticale homepage 2.jpg' 
+            : 'photos/homepage/orizzont homepage 2.jpg';
     }
 }
 updateMediaSources();

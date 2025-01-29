@@ -8,7 +8,7 @@ body {
     height: 85vh;
     display: flex;
     overflow: hidden;
-    background-image: url(photos/bg_mv_01_pc-0000.jpg);
+    background-image: url(../photos/background/bg_mv_01_pc-0000.jpg);
     background-size: cover;
     background-position: bottom;
 }

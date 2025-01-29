@@ -330,7 +330,7 @@
 /* Banner Section */
 .banner {
     position: relative;
-    background-image: url(photos/contenuti\ sito\ web\ saiko/DSC04024-88\ lq.jpg);
+    background-image: url(../photos/images/DSC04024-88\ lq.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect */
@@ -407,15 +407,15 @@
 }
 
 #beer-1 {
-    background-image: url('photos/sushi_table4.png');
+    background-image: url('../photos/background/sushi_table4.png');
 }
 
 #beer-2 {
-    background-image:  url('photos/download.png');
+    background-image:  url('../photos/background/download.png');
 }
 
 #beer-3 {
-    background-image:  url('photos/sushi_table3.png');
+    background-image:  url('../photos/background/sushi_table3.png');
 }
 
 .product-container { /* Adjust for proper spacing within the 80% width */

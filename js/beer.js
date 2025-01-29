@@ -14,7 +14,7 @@ const slideTexts = [
         ],
         pretitle: 'Fresca e versatile',
         title: 'Informazioni sulla birra Yukio',
-        imgSrc: 'photos/DSC03886-54.jpg',
+        imgSrc: 'photos/images/DSC03886-54.jpg',
     },
     {
         description: 'Birra IPA che, grazie al suo perfetto equilibrio tra l\'amarezza del luppolo e la dolcezza del malto caramellato, si abbina perfettamente a piatti piccanti o a qualsiasi piatto fritto (come la tempura) che desideri offrire ai tuoi clienti.',
@@ -25,7 +25,7 @@ const slideTexts = [
         ],
         pretitle: 'Elegante ed agrumato',
         title: 'Informazioni sulla birra Itoku',
-        imgSrc: 'photos/DSC03729-21 ph.jpg',
+        imgSrc: 'photos/images/DSC03729-21 ph.jpg',
     },
     {
         description: 'Birra BLANCHE molto pregiata, caratterizzata da una luppolatura con la varietà CASCADE e arricchita dall’aggiunta di scorza d’arancia amara. Perfetta per accompagnare il sashimi, si sposa magnificamente con tutti i piatti a base di pesce.',
@@ -36,7 +36,7 @@ const slideTexts = [
         ],
         pretitle: 'Intenso ma bilanciato',
         title: 'Informazioni sulla birra Sujin',
-        imgSrc: 'photos/DSC03709-9 ph.jpg',
+        imgSrc: 'photos/images/DSC03709-9 ph.jpg',
     },
 ];
 
