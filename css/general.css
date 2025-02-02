@@ -53,6 +53,17 @@ button:hover a {
     color: #191919;
 }
 
+.entering {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.entering.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 header {
     width: 100%;
     position: absolute; /* Stays at the top of the viewport */

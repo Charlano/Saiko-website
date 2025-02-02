@@ -4,7 +4,6 @@ const dotsContainer = document.getElementById('slider-dots');
 
 const slideTexts = [
 
-    //changes
     {
         description: 'La nostra birra più leggera e versatile, una PILS (lager) che esprime tutta la purezza della tradizione birraria giapponese. Fresca e dissetante, è l’abbinamento perfetto per una cena a base di riso, zuppe ma anche involtini primavera, uramaki e tanti altri.',
         nutritionalInfo: [
@@ -14,7 +13,8 @@ const slideTexts = [
         ],
         pretitle: 'Fresca e versatile',
         title: 'Informazioni sulla birra Yukio',
-        imgSrc: 'photos/images/DSC03886-54.jpg',
+        imgSrcSmall: 'photos/images/foto yukio prodotti telefono.jpg',
+        imgSrcLarge: 'photos/images/foto prodotti pc yukio.jpg'
     },
     {
         description: 'Birra IPA che, grazie al suo perfetto equilibrio tra l\'amarezza del luppolo e la dolcezza del malto caramellato, si abbina perfettamente a piatti piccanti o a qualsiasi piatto fritto (come la tempura) che desideri offrire ai tuoi clienti.',
@@ -25,7 +25,8 @@ const slideTexts = [
         ],
         pretitle: 'Elegante ed agrumato',
         title: 'Informazioni sulla birra Itoku',
-        imgSrc: 'photos/images/DSC03729-21 ph.jpg',
+        imgSrcSmall: 'photos/images/foto itoku prodotti telefono.jpg',
+        imgSrcLarge: 'photos/images/foto prodotti pc itoku.jpg'
     },
     {
         description: 'Birra BLANCHE molto pregiata, caratterizzata da una luppolatura con la varietà CASCADE e arricchita dall’aggiunta di scorza d’arancia amara. Perfetta per accompagnare il sashimi, si sposa magnificamente con tutti i piatti a base di pesce.',
@@ -36,13 +37,16 @@ const slideTexts = [
         ],
         pretitle: 'Intenso ma bilanciato',
         title: 'Informazioni sulla birra Sujin',
-        imgSrc: 'photos/images/DSC03709-9 ph.jpg',
+        imgSrcSmall: 'photos/images/foto sujin prodotti telefono.jpg',
+        imgSrcLarge: 'photos/images/foto prodotti pc sujin.jpg'
     },
 ];
 
 let currentIndex = 0;
 
 function updateSlider(index) {
+    let isLargeScreen = window.innerWidth > 1000
+
     slides.forEach((slide, i) => {
         slide.style.transform = `translateX(${(i - index) * 100}%)`;
     });
@@ -54,7 +58,9 @@ function updateSlider(index) {
     document.querySelector('.info-section .pretitle').textContent = slideData.pretitle;
     document.querySelector('.info-section .title').textContent = slideData.title;
     document.querySelector('.info-section .description').textContent = slideData.description;
-    document.querySelector('.image-section .beer-image').src = slideData.imgSrc;
+    document.querySelector('.image-section .beer-image').src = isLargeScreen 
+        ? slideTexts[currentIndex].imgSrcLarge 
+        : slideTexts[currentIndex].imgSrcSmall;
 
     document.querySelectorAll('.dot').forEach((dot, i) => {
         dot.classList.toggle('active', i === index);
